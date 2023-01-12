@@ -2,3 +2,40 @@ div.div-from {
     width: 30%;
     margin: 10% auto;
 }
+
+div.layui-box {
+    width: 208px;
+    margin: 20px 20px;
+    float: left;
+}
+
+img.div-img {
+    border-radius:20px;
+    width: 40px;
+    height: 40px;
+}
+
+div.layui-card {
+    border-radius:20px;
+    height: 80px;
+}
+div.border-radius {
+    width: 208px;
+}
+
+div.layui-card-body {
+    height: 60px;
+    text-align: center;
+
+}
+
+span.span-img {
+    padding: 20px 0 20px 15px;
+    float: left;
+}
+
+span.span-font {
+    font-size: 15px;
+    font-weight: bold;
+}
+

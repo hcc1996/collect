@@ -5,40 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>网站导航</title>
     <link href="../js/layui/css/layui.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
 </head>
 <script src="../js/layui/layui.js"></script>
-<body>
-<button type="button" onclick="sub1()" class="layui-btn">提交</button>
-<div id="json">
-<ul id="ul-u"></ul>
-</div>
+<body style="background: #e2e6ea">
+<ul class="layui-nav">
+    <li class="layui-nav-item layui-this"><a href="">选中</a></li>
+</ul>
+<div id="jsonId">
+
+<!--    <div class="layui-box">-->
+<!--        <a href="aa">-->
+<!--            <div class="layui-card">-->
+<!--                <span class="span-img">-->
+<!--                    <img class="div-img" src="../img/cropped-1667644392-logo-192x192.png">-->
+<!--                </span>-->
+<!--                <div class="layui-card-body">-->
+<!--                    <span class="span-font">卡片式面板面板通</span><br>-->
+<!--                    卡片式面板面板通-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </a>-->
+<!--    </div>-->
+
 </body>
 
 
 <script>
-    // import json from '../json/navigation.json'
-
-    function sub1() {
+    window.onload = function () {
         fetch('../json/navigation.json')
             .then((r) => r.json())
             .then((json) => inJson(json));
     }
 
+
     function inJson(join) {
-        let html;
+        var html = document.createDocumentFragment();
 
         for (let i = 0; i < join.length; i++) {
-            html.append('<li></li>');
-
-
-            // console.log(join[i].label);
-
-
+            var divBox = document.createElement('div');
+            divBox.className = 'layui-box';
+            var layuiCard = document.createElement('div');
+            layuiCard.className = 'layui-card';
+            var spanImg = document.createElement('span');
+            spanImg.className = 'span-img';
+            var img = document.createElement('img');
+            img.className = 'div-img';
+            img.src = join[i].src;
+            spanImg.appendChild(img);
+            layuiCard.appendChild(spanImg);
+            var layuiCardBody = document.createElement('div');
+            layuiCardBody.className = 'layui-card-body';
+            var spanFont = document.createElement('span');
+            spanFont.className = 'span-font';
+            spanFont.innerText = join[i].label;
+            var br = document.createElement('br');
+            layuiCardBody.appendChild(spanFont);
+            layuiCardBody.appendChild(br);
+            layuiCardBody.append(join[i].describe);
+            layuiCard.appendChild(layuiCardBody);
+            var aHref = document.createElement('a');
+            aHref.href = join[i].href;
+            aHref.appendChild(layuiCard)
+            divBox.appendChild(aHref);
+            html.appendChild(divBox);
         }
-
-console.log(html)
-        document.getElementById('json').innerText = html;
-
+        document.getElementById("jsonId").appendChild(html);
     }
+
+
 </script>
 </html>

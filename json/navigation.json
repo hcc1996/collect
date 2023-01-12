@@ -1,11 +1,62 @@
 [
   {
-    "label": "aa",
-    "describe": "aa",
-    "url": "aa"
-  },  {
-  "label": "bb",
-  "describe": "bb",
-  "url": "bb"
-}
+    "label": "以图搜番",
+    "describe": "通过截图搜索",
+    "href": "https://trace.moe/",
+    "src": "https://trace.moe/favicon.png"
+  },
+  {
+    "label": "ePub 繁简转换",
+    "describe": "ePub 繁简转换",
+    "href": "https://v.magiconch.com/epub-transform.html",
+    "src": "https://v.magiconch.com/favicon.ico"
+  },
+  {
+    "label": "蜜柑计划",
+    "describe": "资源搜索",
+    "href": "https://mikanani.me/",
+    "src": "https://mikanani.me/images/favicon.ico?v=2"
+  },
+  {
+    "label": "幻萌动漫",
+    "describe": "网站导航",
+    "href": "https://www.hmacg.top/",
+    "src": "https://www.hmacg.top/favicon.ico"
+  },
+  {
+    "label": "爱恋动漫",
+    "describe": "BT资源下载",
+    "href": "https://www.kisssub.org/",
+    "src": "https://www.kisssub.org/images/favicon/kisssub.ico"
+  },
+  {
+    "label": "A4k字幕网",
+    "describe": "字幕下载",
+    "href": "https://www.a4k.net/",
+    "src": "../img/favicon.ico"
+  },
+  {
+    "label": "subhd字幕",
+    "describe": "字幕下载",
+    "href": "https://subhd.tv/sub/new/",
+    "src": "https://img.huo720.com/apple-touch-icon.png"
+  },
+  {
+    "label": "射手网(伪)",
+    "describe": "字幕下载",
+    "href": "http://assrt.net/",
+    "src": "http://assrt.net/favicon.ico"
+  },
+  {
+    "label": "魔笔小说",
+    "describe": "轻小说下载",
+    "href": "https://www.mobinovels.com/",
+    "src": "../img/cropped-1667644392-logo-192x192.png"
+  },
+  {
+    "label": "人工智能图片放大",
+    "describe": "图片放大",
+    "href": "https://bigjpg.com/",
+    "src": "https://bigjpg.com/htdocs/favicon.ico"
+  }
 ]
