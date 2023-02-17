@@ -58,5 +58,19 @@
     "describe": "图片放大",
     "href": "https://bigjpg.com/",
     "src": "https://bigjpg.com/htdocs/favicon.ico"
+  },
+  {
+    "label": "ACG资源搜索",
+    "describe": "BT资源下载",
+    "href": "https://acg.rip/",
+    "src": "https://bigjpg.com/htdocs/favicon.ico"
+  },
+  {
+    "label": "萌番组",
+    "describe": "每日更新导航",
+    "href": "https://bangumi.moe/",
+    "src": "https://bigjpg.com/htdocs/favicon.ico"
   }
+
+
 ]
