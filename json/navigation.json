@@ -79,13 +79,13 @@
   },
   {
     "label": "VCB-Studio",
-    "describe": "VCB-Studio",
+    "describe": "BT资源",
     "href": "https://vcb-s.com/",
     "src": "https://vcb-s.com/wp-content/customRes/favicon@180.png"
   },
   {
     "label": "nagatoyuc",
-    "describe": "nagatoyuc",
+    "describe": "追番目录",
     "href": "https://yuc.wiki/",
     "src": "https://yuc.wiki/images/avatar.jpg"
   },
@@ -94,7 +94,16 @@
     "describe": "VPN软件",
     "href": "https://xn--4gq62f52gdss.com/#/register?code=LLYeqkiz",
     "src": "https://yuc.wiki/images/avatar.jpg"
+  },
+  {
+    "label": "nayfun",
+    "describe": "动漫",
+    "href": "https://www.nyafun.net/?btwaf=44015161",
+    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
   }
+
+
+]
 
 
 ]
