@@ -1,9 +1,9 @@
 [
   {
-    "label": "以图搜番",
-    "describe": "通过截图搜索",
-    "href": "https://trace.moe/",
-    "src": "https://trace.moe/favicon.png"
+    "label": "番组计划",
+    "describe": "评分网站",
+    "href": "https://bgm.tv/",
+    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
   },
   {
     "label": "ePub 繁简转换",
@@ -18,6 +18,12 @@
     "src": "https://mikanani.me/images/favicon.ico?v=2"
   },
   {
+    "label": "Moebox",
+    "describe": "资源网站导航",
+    "href": "https://www.moebox.cc/",
+    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+  },
+  {
     "label": "幻萌动漫",
     "describe": "网站导航",
     "href": "https://www.hmacg.top/",
@@ -28,6 +34,12 @@
     "describe": "BT资源下载",
     "href": "https://www.kisssub.org/",
     "src": "https://www.kisssub.org/images/favicon/kisssub.ico"
+  }, 
+  {
+    "label": "nayfun",
+    "describe": "动漫在线播放",
+    "href": "https://www.nyafun.net/?btwaf=44015161",
+    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
   },
   {
     "label": "A4k字幕网",
@@ -40,6 +52,12 @@
     "describe": "字幕下载",
     "href": "https://subhd.tv/sub/new/",
     "src": "https://img.huo720.com/apple-touch-icon.png"
+  },
+  {
+    "label": "Anime字幕论坛",
+    "describe": "论坛寻找字幕",
+    "href": "https://bbs.acgrip.com/",
+    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
   },
   {
     "label": "射手网(伪)",
@@ -96,12 +114,6 @@
     "src": "https://yuc.wiki/images/avatar.jpg"
   },
   {
-    "label": "nayfun",
-    "describe": "动漫在线播放",
-    "href": "https://www.nyafun.net/?btwaf=44015161",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  },
-  {
     "label": "向日葵远程控制",
     "describe": "软件",
     "href": "https://sunlogin.oray.com/",
@@ -112,6 +124,12 @@
     "describe": "软件",
     "href": "https://www.bitcomet.com/en",
     "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+  }, 
+  {
+    "label": "以图搜番",
+    "describe": "通过截图搜索",
+    "href": "https://trace.moe/",
+    "src": "https://trace.moe/favicon.png"
   },
   {
     "label": "弹弹play",
