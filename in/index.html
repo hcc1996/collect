@@ -1,78 +1,240 @@
 <!DOCTYPE html>
-<html>
+<!-- 添加 lang 属性，指定页面语言为中文 -->
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>网站导航</title>
     <link href="../js/layui/css/layui.css" rel="stylesheet">
     <link href="../css/default.css" rel="stylesheet">
+    <style>
+        /* 使用 Grid 布局 */
+        #jsonId {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            padding: 4px;
+        }
+
+        .layui-box {
+            box-sizing: border-box;
+        }
+
+        .group-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 4px;
+        }
+
+        h2 {
+            margin-bottom: 2px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .layui-card {
+            margin: 0;
+        }
+
+        .layui-card-body {
+            padding: 4px;
+        }
+
+        .div-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .span-font {
+            font-size: 14px;
+        }
+
+        .layui-card-body p {
+            margin: 2px 0;
+            font-size: 12px;
+            color: #666; /* 设置描述文字颜色 */
+            display: block; /* 确保元素显示 */
+        }
+
+        /* tab 样式 */
+        .tab-container {
+            display: flex;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-bottom: none;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border-color: #ddd;
+            border-bottom-color: transparent;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .group-content {
+            display: none;
+        }
+
+        .group-content.active {
+            display: block;
+        }
+
+        .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+
+        .status.online {
+            background-color: green;
+        }
+
+        .status.offline {
+            background-color: red;
+        }
+    </style>
 </head>
 <script src="../js/layui/layui.js"></script>
 <body style="background: #e2e6ea">
-<ul class="layui-nav">
-    <li class="layui-nav-item layui-this"><a href="">选中</a></li>
-</ul>
-<div id="jsonId">
-
-<!--    <div class="layui-box">-->
-<!--        <a href="aa">-->
-<!--            <div class="layui-card">-->
-<!--                <span class="span-img">-->
-<!--                    <img class="div-img" src="../img/cropped-1667644392-logo-192x192.png">-->
-<!--                </span>-->
-<!--                <div class="layui-card-body">-->
-<!--                    <span class="span-font">卡片式面板面板通</span><br>-->
-<!--                    卡片式面板面板通-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </a>-->
-<!--    </div>-->
-</div>
+    <!-- 移除 layui-nav，添加 tab 容器 -->
+    <div class="tab-container" id="tabContainer"></div>
+    <div id="jsonId"></div>
 </body>
-
-
 <script>
-    window.onload = function () {
-        fetch('../json/navigation.json')
-            .then((r) => r.json())
-            .then((json) => inJson(json));
-    }
-
-
-    function inJson(join) {
-        var html = document.createDocumentFragment();
-
-        for (let i = 0; i < join.length; i++) {
-            var divBox = document.createElement('div');
-            divBox.className = 'layui-box';
-            var layuiCard = document.createElement('div');
-            layuiCard.className = 'layui-card';
-            var spanImg = document.createElement('span');
-            spanImg.className = 'span-img';
-            var img = document.createElement('img');
-            img.className = 'div-img';
-            img.src = join[i].src;
-            spanImg.appendChild(img);
-            layuiCard.appendChild(spanImg);
-            var layuiCardBody = document.createElement('div');
-            layuiCardBody.className = 'layui-card-body';
-            var spanFont = document.createElement('span');
-            spanFont.className = 'span-font';
-            spanFont.innerText = join[i].label;
-            var br = document.createElement('br');
-            layuiCardBody.appendChild(spanFont);
-            layuiCardBody.appendChild(br);
-            layuiCardBody.append(join[i].describe);
-            layuiCard.appendChild(layuiCardBody);
-            var aHref = document.createElement('a');
-            aHref.href = join[i].href;
-            aHref.appendChild(layuiCard)
-            divBox.appendChild(aHref);
-            html.appendChild(divBox);
+    // 使用 async/await 简化异步操作
+    window.onload = async () => {
+        try {
+            const response = await fetch('../json/navigation.json');
+            // 检查响应状态
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const json = await response.json();
+            initTabs(json);
+            await inJson(json);
+        } catch (error) {
+            console.error('获取 JSON 数据时出错:', error);
         }
-        document.getElementById("jsonId").appendChild(html);
+    };
+
+    function initTabs(data) {
+        const tabContainer = document.getElementById('tabContainer');
+        data.forEach((group, index) => {
+            const tab = document.createElement('div');
+            tab.className = `tab ${index === 0 ? 'active' : ''}`;
+            tab.textContent = group.group;
+            tab.addEventListener('click', () => {
+                const tabs = document.querySelectorAll('.tab');
+                const contents = document.querySelectorAll('.group-content');
+                tabs.forEach(tab => tab.classList.remove('active'));
+                contents.forEach(content => content.classList.remove('active'));
+                tab.classList.add('active');
+                contents[index].classList.add('active');
+            });
+            tabContainer.appendChild(tab);
+        });
     }
 
+    async function inJson(data) {
+        const jsonId = document.getElementById("jsonId");
+        const fragment = document.createDocumentFragment();
 
+        for (const [groupIndex, group] of data.entries()) {
+            const groupContent = document.createElement('div');
+            groupContent.className = `group-content ${groupIndex === 0 ? 'active' : ''}`;
+
+            for (const item of group.items) {
+                const divBox = document.createElement('div');
+                divBox.className = 'layui-box';
+
+                const aHref = document.createElement('a');
+                aHref.href = item.href;
+                aHref.target = "_blank";
+                aHref.rel = "noopener noreferrer";
+
+                const layuiCard = document.createElement('div');
+                layuiCard.className = 'layui-card';
+
+                const spanImg = document.createElement('span');
+                spanImg.className = 'span-img';
+
+                const img = document.createElement('img');
+                img.className = 'div-img';
+                img.src = item.src;
+                img.alt = item.label;
+
+                spanImg.appendChild(img);
+                layuiCard.appendChild(spanImg);
+
+                const layuiCardBody = document.createElement('div');
+                layuiCardBody.className = 'layui-card-body';
+
+                const spanFont = document.createElement('span');
+                spanFont.className = 'span-font';
+                spanFont.textContent = item.label;
+
+                const statusIndicator = document.createElement('span');
+                statusIndicator.className = 'status';
+                // 初始状态显示为检测中
+                statusIndicator.textContent = '检测中...';
+                statusIndicator.dataset.href = item.href; // 存储链接，供后续检测使用
+
+                const description = document.createElement('p');
+                description.textContent = item.describe;
+
+                layuiCardBody.appendChild(spanFont);
+                layuiCardBody.appendChild(statusIndicator);
+                layuiCardBody.appendChild(description);
+
+                layuiCard.appendChild(layuiCardBody);
+                aHref.appendChild(layuiCard);
+                divBox.appendChild(aHref);
+                groupContent.appendChild(divBox);
+            }
+
+            fragment.appendChild(groupContent);
+        }
+
+        jsonId.appendChild(fragment);
+
+        // 页面渲染完成后，异步执行检测操作
+        setTimeout(() => {
+            const statusIndicators = document.querySelectorAll('.status');
+            statusIndicators.forEach((statusIndicator) => {
+                const img = new Image();
+                const timeoutId = setTimeout(() => {
+                    if (img.complete) return;
+                    statusIndicator.className = 'status offline';
+                    statusIndicator.title = '检测超时';
+                    statusIndicator.textContent = '';
+                }, 5000);
+
+                img.src = statusIndicator.dataset.href.replace(/\/$/, '') + '/favicon.ico';
+                img.onload = () => {
+                    clearTimeout(timeoutId);
+                    statusIndicator.className = 'status online';
+                    statusIndicator.title = '网站可访问';
+                    statusIndicator.textContent = '';
+                };
+                img.onerror = () => {
+                    clearTimeout(timeoutId);
+                    statusIndicator.className = 'status offline';
+                    statusIndicator.title = '网站不可访问';
+                    statusIndicator.textContent = '';
+                };
+            });
+        }, 0);
+    }
 </script>
 </html>
+
+
+

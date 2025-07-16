@@ -1,165 +1,177 @@
 [
   {
-    "label": "番组计划",
-    "describe": "评分网站",
-    "href": "https://bgm.tv/",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+    "group": "工具",
+    "items": [
+      {
+        "label": "魔笔小说",
+        "describe": "轻小说下载",
+        "href": "https://www.mobinovels.com/",
+        "src": "../img/cropped-1667644392-logo-192x192.png"
+      },
+      {
+        "label": "人工智能图片放大",
+        "describe": "图片放大",
+        "href": "https://bigjpg.com/",
+        "src": "https://bigjpg.com/htdocs/favicon.ico"
+      },
+      {
+        "label": "清图",
+        "describe": "图片处理",
+        "href": "https://qingtu.cn/",
+        "src": "https://bigjpg.com/htdocs/favicon.ico"
+      }, {
+        "label": "一元机场",
+        "describe": "VPN软件",
+        "href": "https://xn--4gq62f52gdss.com/#/register?code=LLYeqkiz",
+        "src": "https://yuc.wiki/images/avatar.jpg"
+      },
+      {
+        "label": "向日葵远程控制",
+        "describe": "软件",
+        "href": "https://sunlogin.oray.com/",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },
+      {
+        "label": "比特彗星",
+        "describe": "软件",
+        "href": "https://www.bitcomet.com/en",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },
+      {
+        "label": "以图搜番",
+        "describe": "通过截图搜索",
+        "href": "https://trace.moe/",
+        "src": "https://trace.moe/favicon.png"
+      },
+      {
+        "label": "弹弹play",
+        "describe": "播放软件",
+        "href": "https://www.dandanplay.com/",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },  {
+        "label": "ePub 繁简转换",
+        "describe": "ePub 繁简转换",
+        "href": "https://v.magiconch.com/epub-transform.html",
+        "src": "https://v.magiconch.com/favicon.ico"
+      }
+    ]
   },
   {
-    "label": "ePub 繁简转换",
-    "describe": "ePub 繁简转换",
-    "href": "https://v.magiconch.com/epub-transform.html",
-    "src": "https://v.magiconch.com/favicon.ico"
+    "group": "追番",
+    "items": [
+      {
+        "label": "番组计划",
+        "describe": "评分网站",
+        "href": "https://bgm.tv/",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },  {
+        "label": "ACG资源搜索",
+        "describe": "BT资源下载",
+        "href": "https://acg.rip/",
+        "src": "https://bigjpg.com/htdocs/favicon.ico"
+      },
+      {
+        "label": "萌番组",
+        "describe": "每日更新导航",
+        "href": "https://bangumi.moe/",
+        "src": "https://bigjpg.com/htdocs/favicon.ico"
+      },
+      {
+        "label": "VCB-Studio",
+        "describe": "BT资源",
+        "href": "https://vcb-s.com/",
+        "src": "https://vcb-s.com/wp-content/customRes/favicon@180.png"
+      },
+      {
+        "label": "nagatoyuc",
+        "describe": "追番目录",
+        "href": "https://yuc.wiki/",
+        "src": "https://yuc.wiki/images/avatar.jpg"
+      }
+    ]
   },
   {
-    "label": "蜜柑计划",
-    "describe": "资源搜索",
-    "href": "https://mikanani.me/",
-    "src": "https://mikanani.me/images/favicon.ico?v=2"
+    "group": "在线观看",
+    "items": [
+      {
+        "label": "爱恋动漫",
+        "describe": "BT资源下载",
+        "href": "https://www.kisssub.org/",
+        "src": "https://www.kisssub.org/images/favicon/kisssub.ico"
+      },
+      {
+        "label": "nayfun",
+        "describe": "动漫在线播放",
+        "href": "https://www.nyafun.net/?btwaf=44015161",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },  {
+        "label": "稀饭动漫",
+        "describe": "动漫",
+        "href": "https://dick.xfani.com/",
+        "src": "https://dick.xfani.com/upload/site/20240308-1/813e41f81d6f85bfd7a44bf8a813f9e5.png"
+      }
+    ]
   },
   {
-    "label": "Moebox",
-    "describe": "资源网站导航",
-    "href": "https://www.moebox.cc/",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+    "group": "查找字幕",
+    "items": [
+      {
+        "label": "A4k字幕网",
+        "describe": "字幕下载",
+        "href": "https://www.a4k.net/",
+        "src": "../img/favicon.ico"
+      },
+      {
+        "label": "subhd字幕",
+        "describe": "字幕下载",
+        "href": "https://subhd.tv/sub/new/",
+        "src": "https://img.huo720.com/apple-touch-icon.png"
+      },
+      {
+        "label": "Anime字幕论坛",
+        "describe": "论坛寻找字幕",
+        "href": "https://bbs.acgrip.com/",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },
+      {
+        "label": "射手网(伪)",
+        "describe": "字幕下载",
+        "href": "http://assrt.net/",
+        "src": "http://assrt.net/favicon.ico"
+      }
+    ]
   },
   {
-    "label": "幻萌动漫",
-    "describe": "网站导航",
-    "href": "https://www.hmacg.top/",
-    "src": "https://www.hmacg.top/favicon.ico"
-  },
-  {
-    "label": "爱恋动漫",
-    "describe": "BT资源下载",
-    "href": "https://www.kisssub.org/",
-    "src": "https://www.kisssub.org/images/favicon/kisssub.ico"
-  }, 
-  {
-    "label": "nayfun",
-    "describe": "动漫在线播放",
-    "href": "https://www.nyafun.net/?btwaf=44015161",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  },
-  {
-    "label": "A4k字幕网",
-    "describe": "字幕下载",
-    "href": "https://www.a4k.net/",
-    "src": "../img/favicon.ico"
-  },
-  {
-    "label": "subhd字幕",
-    "describe": "字幕下载",
-    "href": "https://subhd.tv/sub/new/",
-    "src": "https://img.huo720.com/apple-touch-icon.png"
-  },
-  {
-    "label": "Anime字幕论坛",
-    "describe": "论坛寻找字幕",
-    "href": "https://bbs.acgrip.com/",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  },
-  {
-    "label": "射手网(伪)",
-    "describe": "字幕下载",
-    "href": "http://assrt.net/",
-    "src": "http://assrt.net/favicon.ico"
-  },
-  {
-    "label": "魔笔小说",
-    "describe": "轻小说下载",
-    "href": "https://www.mobinovels.com/",
-    "src": "../img/cropped-1667644392-logo-192x192.png"
-  },
-  {
-    "label": "人工智能图片放大",
-    "describe": "图片放大",
-    "href": "https://bigjpg.com/",
-    "src": "https://bigjpg.com/htdocs/favicon.ico"
-  },
-  {
-    "label": "清图",
-    "describe": "图片处理",
-    "href": "https://qingtu.cn/",
-    "src": "https://bigjpg.com/htdocs/favicon.ico"
-  },
-  {
-    "label": "ACG资源搜索",
-    "describe": "BT资源下载",
-    "href": "https://acg.rip/",
-    "src": "https://bigjpg.com/htdocs/favicon.ico"
-  },
-  {
-    "label": "萌番组",
-    "describe": "每日更新导航",
-    "href": "https://bangumi.moe/",
-    "src": "https://bigjpg.com/htdocs/favicon.ico"
-  },
-  {
-    "label": "VCB-Studio",
-    "describe": "BT资源",
-    "href": "https://vcb-s.com/",
-    "src": "https://vcb-s.com/wp-content/customRes/favicon@180.png"
-  },
-  {
-    "label": "nagatoyuc",
-    "describe": "追番目录",
-    "href": "https://yuc.wiki/",
-    "src": "https://yuc.wiki/images/avatar.jpg"
-  },
-  {
-    "label": "一元机场",
-    "describe": "VPN软件",
-    "href": "https://xn--4gq62f52gdss.com/#/register?code=LLYeqkiz",
-    "src": "https://yuc.wiki/images/avatar.jpg"
-  },
-  {
-    "label": "向日葵远程控制",
-    "describe": "软件",
-    "href": "https://sunlogin.oray.com/",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  },
-  {
-    "label": "比特彗星",
-    "describe": "软件",
-    "href": "https://www.bitcomet.com/en",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  }, 
-  {
-    "label": "以图搜番",
-    "describe": "通过截图搜索",
-    "href": "https://trace.moe/",
-    "src": "https://trace.moe/favicon.png"
-  },
-  {
-    "label": "弹弹play",
-    "describe": "播放软件",
-    "href": "https://www.dandanplay.com/",
-    "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
-  } ,
-  {
-    "label": "花猫导航",
-    "describe": "导航",
-    "href": "https://huamao.vip/",
-    "src": "https://huamao.vip/app/v/daohang/ui/img/favicon.ico"
-  },
-  {
-    "label": "稀饭动漫",
-    "describe": "动漫",
-    "href": "https://dick.xfani.com/",
-    "src": "https://dick.xfani.com/upload/site/20240308-1/813e41f81d6f85bfd7a44bf8a813f9e5.png"
-  },
-  {
-    "label": "次元小镇",
-    "describe": "壁纸",
-    "href": "https://dimtown.com/",
-    "src": "https://dick.xfani.com/upload/site/20240308-1/813e41f81d6f85bfd7a44bf8a813f9e5.png"
-  },
-  {
-    "label": "扬德克斯",
-    "describe": "壁纸",
-    "href": "https://yandex.com/images/",
-    "src": "https://dick.xfani.com/upload/site/20240308-1/813e41f81d6f85bfd7a44bf8a813f9e5.png"
+    "group": "资源导航",
+    "items": [
+      {
+        "label": "花猫导航",
+        "describe": "导航",
+        "href": "https://huamao.vip/",
+        "src": "https://huamao.vip/app/v/daohang/ui/img/favicon.ico"
+      },  {
+        "label": "蜜柑计划",
+        "describe": "资源搜索",
+        "href": "https://mikanani.me/",
+        "src": "https://mikanani.me/images/favicon.ico?v=2"
+      },
+      {
+        "label": "Moebox",
+        "describe": "资源网站导航",
+        "href": "https://www.moebox.cc/",
+        "src": "https://dingyue.ws.126.net/2022/1023/d64c5283j00rk6yq202vwd001kw01kwp.jpg"
+      },
+      {
+        "label": "幻萌动漫",
+        "describe": "网站导航",
+        "href": "https://www.hmacg.top/",
+        "src": "https://www.hmacg.top/favicon.ico"
+      }
+    ]
   }
 ]
+
+
+
+
 
